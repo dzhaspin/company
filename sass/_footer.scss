@@ -1,0 +1,107 @@
+.footer {
+  padding: 53px 0px 65px;
+
+  // .footer__body
+
+
+  // .footer__nav
+
+  &__nav {}
+
+  // .footer__menu
+
+  &__menu {
+    display: flex;
+
+    li {
+      position: relative;
+      margin-right: 41px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        margin: -2px 0px 0px 0px;
+        right: -20px;
+        width: 4px;
+        height: 4px;
+        background-color: $accent;
+      }
+
+      &:last-child {
+        &:before {
+          display: none;
+        }
+      }
+
+
+      a {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: $text;
+        transition: all 0.25s;
+
+        &:hover {
+          color: $accent;
+        }
+      }
+    }
+  }
+
+  // .footer__bootom
+
+  &__bootom {
+    margin: 46px 0px 0px 0px;
+    @include border
+  }
+
+  // .footer__wrap
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .footer__copy
+
+  &__copy {
+    padding: 27px 0px 0px 0px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $text;
+
+    span {
+      display: block;
+    }
+  }
+
+  // .footer__logo
+
+  &__logo {
+    color: $text;
+  }
+
+  // .footer__dev
+
+  &__dev {
+    a{
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  // .footer__callback
+
+  &__callback {}
+}
+
+.container {}
+
+.callback-link {}
