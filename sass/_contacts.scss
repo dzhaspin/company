@@ -9,6 +9,9 @@
     height: 280px;
     background: rgba(1, 80, 159, 0.9);
     color: $white;
+    @media (max-width:$md4+px){
+      position: initial;
+    }
   }
 
   // .contacts__block
@@ -34,6 +37,10 @@
     width: 45px;
     height: 45px;
     background: #FF3B2F;
+
+    img {
+      width: auto;
+    }
   }
 
   // .contacts__content
@@ -43,6 +50,7 @@
     max-width: 170px;
     font-size: 14px;
   }
+
   // .contacts__title
 
   &__title {
@@ -57,10 +65,18 @@
     margin: 4px 0px 0px 0px;
     line-height: 16px;
     color: rgba(255, 255, 255, 0.7);
-    a{
+
+    a {
       font-size: 14px;
       color: rgba(255, 255, 255, 0.7);
 
+    }
+  }
+  @media (max-width:$md4+px){
+    background-color: $bg;
+    margin-top: -1px;
+    .maps{
+      display: none;
     }
   }
 }

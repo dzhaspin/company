@@ -1,9 +1,78 @@
 .header {
-
-  &__body{
+	&__body {
 		display: flex;
 		flex-direction: column;
 
+		@media (max-width:$md2+px) {
+			flex-direction: column-reverse;
+
+			.header__top {
+				padding: 62px 0px 31px;
+			}
+
+			.header__nav {
+				position: fixed;
+				width: 100%;
+				top: 0;
+				background: $white;
+				z-index: 99;
+				// box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+				&_wrap{
+					padding: 11px 0 11px 0;
+					border: none;
+				}	
+				.header__menu {
+					display: none;
+				}
+
+				.header__search {
+					margin-left: auto;
+				}
+			}
+
+			.toggle {
+				display: block;
+			}
+
+			.header__wrap {
+				flex-wrap: wrap;
+			}
+
+			.header__logo {
+				width: 100%;
+				text-align: center;
+			}
+
+			.header__phone {
+				margin-left: 0;
+				width: 50%;
+				text-align: left;
+			}
+
+			.header__callback {
+				margin-left: 0;
+				width: 50%;
+				text-align: right;
+			}
+		}
+
+		@media (max-width:$md4+px) {
+			.header__logo {
+				margin-bottom: 22px;
+				margin-top: 4px;
+			}
+
+			.header__phone {
+				width: 100%;
+				text-align: center;
+				margin-bottom: 15px;
+			}
+
+			.header__callback {
+				width: 100%;
+				text-align: center;
+			}
+		}
 	}
 
 	// .header__top
@@ -63,11 +132,13 @@
 	// .header__nav
 
 	&__nav {
-		padding: 11px 0px 13px 0px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		@include border;
+		&_wrap{			
+			padding: 11px 0px 13px 0px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			@include border;
+		}
 	}
 
 	// .header__menu
@@ -89,7 +160,8 @@
 			text-transform: uppercase;
 			color: $text;
 			transition: all 0.25s;
-			&:hover{
+
+			&:hover {
 				color: $accent;
 			}
 		}
@@ -105,7 +177,7 @@
 }
 
 .main {
-  position: relative;
+	position: relative;
 	// .main__body
 
 
@@ -123,7 +195,7 @@
 		color: $white;
 		text-align: center;
 		@include fillbg;
-	} 
+	}
 
 	// .main__subtitle
 
@@ -132,6 +204,13 @@
 		font-weight: bold;
 		font-size: 36px;
 		text-transform: uppercase;
+
+		@media (max-width:$md2+px) {
+			max-width: 500px;
+			margin: 30px auto 0;
+			font-size: 30px;
+			line-height: 35px;
+		}
 	}
 
 	&__subtitle {

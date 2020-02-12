@@ -98,6 +98,10 @@
 .main__slider .slick-dots li{
 	list-style: none;
 	margin: 0px 10px;
+	@media (max-width:$md2+px){
+		margin: 0px 7px;
+		
+	}
 }
 .main__slider .slick-dots button{
 	font-size: 0;

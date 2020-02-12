@@ -55,6 +55,9 @@
     display: block;
     margin: 0px auto;
     padding: 0px 40px;
+    @media (max-width:$md4+px){
+      width: 100%; 
+    }
   }
 }
 
@@ -86,7 +89,7 @@
 
   &.active {
     &:before {
-      background: url('../img/check.png') center / cover no-repeat;
+      background: url('../img/icon/check.png') center / cover no-repeat;
     }
   }
 }

@@ -19,6 +19,9 @@
     border: 1px solid $line;
     outline: none;
     // transition: 0.4s;
+    @media (max-width:$md3+px){
+      width: 300px;
+    }
   }
 
   .search-icon {
