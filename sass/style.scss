@@ -209,9 +209,6 @@ $md4:479.98;
     font-size: 14px;
     line-height: 16px;
     color: #656565;
-    a {
-      color: $bg;
-    }
     i{
       margin: 0 2px 0 1px;
     }
@@ -219,5 +216,7 @@ $md4:479.98;
 
   // .breadcrumb__link
 
-  &__link {}
+  &__link {
+    color: $bg;
+  }
 }
