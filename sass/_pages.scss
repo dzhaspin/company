@@ -1,0 +1,181 @@
+.page {
+
+  &__wrapper {
+    padding: 60px 0 83px;
+    p{
+      font-size: 16px;
+    }
+    @media (max-width:$md4+px){
+      padding: 32px 0 70px;
+      p{
+        font-size: 14px; 
+      }
+  
+    }
+  }
+  &__body {
+    padding-top: 47px;
+
+    @media (max-width:$md4+px) {
+      padding-top: 29px;
+    }
+  }
+
+  &__options {
+    margin: 21px 0px 0px 0px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width:$md3+px) {
+      flex-direction: column-reverse;
+      align-items: center
+    }
+  }
+}
+
+
+// Company-page
+.company-page {
+
+  &__text {
+    max-width: 820px;
+    margin-right: 44px;
+
+    @media (max-width:$md2+px) {
+      margin: 0px 19px 0px 0px;
+    }
+
+    @media (max-width:$md3+px) {
+      margin-right: 0;
+    }
+  }
+
+  &__img {
+    width: 250px;
+    height: 200px;
+
+    @media (max-width:$md3+px) {
+      margin: 0px 0px 35px 0px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__cert {
+    .cert__title {
+      margin: 37px 0px 28px 0px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 23px;
+
+    }
+
+    .cert__wrap {
+      display: flex;
+      justify-content: space-between;
+      margin: 0px -15px;
+
+      // flex-wrap: wrap;
+      @media (max-width: 650px) {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+
+      @media (max-width:350px) {
+        margin: 0px -5px;
+      }
+    }
+
+    .cert__item {
+      margin: 0px 0px 7px 0px;
+      padding: 0px 15px;
+
+      img {
+        max-width: 255px;
+        width: 100%;
+      }
+
+      @media (max-width: 650px) {
+        img {
+          width: 145px;
+        }
+      }
+
+      @media (max-width:350px) {
+        padding: 0px 5px;
+      }
+    }
+  }
+}
+
+
+.options {
+
+  // .options__text
+
+  &__text {
+    font-weight: 500;
+    font-size: 16px;
+
+    @media (max-width:$md4+px) {
+      font-size: 14px;
+    }
+  }
+
+  // .options__title
+
+  &__title {
+    margin-top: 18px;
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: $accent;
+
+    @media (max-width:$md4+px) {
+      font-size: 16px;
+    }
+  }
+
+
+  // .options__block
+
+
+  &__block {
+    margin: 24px 0px 0px 0px;
+    padding: 27px 30px 18px;
+    border: 1px solid #C4C4C4;
+  }
+
+  &__list {
+    li {
+      margin: 0px 0px 12px 0px;
+
+      a {
+        font-size: 16px;
+        line-height: 19px;
+        color: $bg;
+
+        &:hover {
+          text-decoration: underline;
+          color: darken($color: $bg, $amount: 5)
+        }
+      }
+    }
+  }
+}
+
+
+// Products-page
+.products-page {
+
+  &__body {
+    max-width: 972px;
+  }
+
+}
