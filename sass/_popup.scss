@@ -1,5 +1,7 @@
 .overlay {
-  position: absolute;
+  position: fixed;
+  overflow-y: scroll;
+  // position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
@@ -10,6 +12,8 @@
 }
 
 .popup {
+  position: fixed;
+  overflow: hidden;
   position: absolute;
   width: 270px;
   left: 50%;

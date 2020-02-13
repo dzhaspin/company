@@ -57,9 +57,14 @@
 			}
 		}
 
-		@media (max-width:$md4+px) {
+		@media (max-width:$md3+px){
 			.header__logo {
 				margin-bottom: 22px;
+			}
+		}
+
+		@media (max-width:$md4+px) {
+			.header__logo {
 				margin-top: 4px;
 			}
 

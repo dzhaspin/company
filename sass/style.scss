@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
 
+//<ПЕРЕМЕННЫЕ>===========================================================================================================
+
 $fontfamily: 'Roboto',
 sans-serif;
 
@@ -12,19 +14,23 @@ $line: #BCBCBC;
 @mixin border {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
+
 @mixin fillbg {
   position: relative;
   z-index: 1;
-  &:before{
-  content: '';
-  position: absolute;
-  top: 0;left: 0;width: 100%;height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: -1;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
   }
 }
 
-//<ПЕРЕМЕННЫЕ>===========================================================================================================
 $minwidth:320px;
 $mw:1110;
 $md1:$mw+12;
@@ -33,7 +39,8 @@ $md3:767.98;
 $md4:479.98;
 
 //</ПЕРЕМЕННЫЕ>===========================================================================================================
-//<ОСНОВНАЯ СЕТКА>===========================================================================================================
+
+//<ОСНОВНАЯ СЕТКА>========================================================================================================
 .container {
   max-width: $mw+px;
   margin: 0 auto;
@@ -41,7 +48,7 @@ $md4:479.98;
 
   @media (max-width:$md1+px) {
     max-width: 970px;
-    padding: 0px 10px; 
+    padding: 0px 10px;
   }
 
   @media (max-width:$md2+px) {
@@ -55,27 +62,32 @@ $md4:479.98;
 
 //</ОСНОВНАЯ СЕТКА>===========================================================================================================
 
-
 @import "resets";
 
 
-.section{
+.section {
   padding: 93px 0 103px;
-  @media (max-width:$md4+px){
+
+  @media (max-width:$md4+px) {
     padding: 65px 0 73px;
-    
   }
 }
-.page-title,
+
+.page__title,
 .title {
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
-  @media (max-width:$md4+px){
+
+  @media (max-width:$md4+px) {
     font-size: 25px;
     line-height: 29px;
   }
+}
+
+.page__title {
+  text-align: left;
 }
 
 .subtitle {
@@ -86,36 +98,11 @@ $md4:479.98;
   line-height: 21px;
   text-align: center;
   color: rgba(0, 0, 0, 0.7);
-  @media (max-width:$md4+px){
+
+  @media (max-width:$md4+px) {
     font-size: 16px;
     line-height: 19px;
   }
-}
-.page-site {
-  padding: 60px 0 83px;
-  p{
-    font-size: 16px;
-  }
-  @media (max-width:$md4+px){
-    padding: 32px 0 70px;
-    p{
-      font-size: 14px; 
-    }
-
-  }
-}
-.page-title {
-  text-align: left;
-
-}
-.page-body{
-  padding-top: 47px;
-  @media (max-width:$md4+px){
-    padding-top: 29px;
-  }
-}
-.page-options{
-  margin: 21px 0px 0px 0px;
 }
 
 .callback-link,
@@ -132,6 +119,7 @@ $md4:479.98;
   letter-spacing: 0.1em;
   transition: all 0.25s;
   cursor: pointer;
+
   &:hover {
     background-color: darken($color: $accent, $amount: 3);
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.308);
@@ -150,16 +138,17 @@ $md4:479.98;
   }
 }
 
+
 @import "header";
 @import "sliders";
 @import "search";
 @import "content";
 @import "form";
 @import "contacts";
-@import "footer"; 
-@import "popup"; 
-@import "toggle"; 
-@import "page-company"; 
+@import "footer";
+@import "popup";
+@import "toggle";
+@import "pages";
 
 
 .scroll-up {
@@ -209,7 +198,8 @@ $md4:479.98;
     font-size: 14px;
     line-height: 16px;
     color: #656565;
-    i{
+
+    i {
       margin: 0 2px 0 1px;
     }
   }
