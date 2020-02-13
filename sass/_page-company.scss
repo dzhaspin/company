@@ -44,11 +44,7 @@
 
   // .page-company__options
 
-  &__options {
-    @media (max-width:$md3+px) {
-      margin: 21px 0px 0px 0px;
-    }
-  }
+
 
   // .page-company__cert
 
@@ -121,6 +117,36 @@
 
     @media (max-width:$md4+px) {
       font-size: 16px;
+    }
+  }
+}
+
+.page-products {
+
+
+  &__body {
+    max-width: 972px;
+  }
+
+}
+
+.options {
+
+  // .options__block
+
+  &__block {
+    margin: 24px 0px 0px 0px;
+    padding: 27px 30px 18px;
+    border: 1px solid #C4C4C4;
+  }
+  &__list {
+    li {
+      margin: 0px 0px 12px 0px;
+      a {
+        font-size: 16px;
+        line-height: 19px;
+        color: $bg;
+      }
     }
   }
 }

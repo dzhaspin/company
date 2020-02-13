@@ -110,7 +110,14 @@ $md4:479.98;
 }
 .page-body{
   padding-top: 47px;
+  @media (max-width:$md4+px){
+    padding-top: 29px;
+  }
 }
+.page-options{
+  margin: 21px 0px 0px 0px;
+}
+
 .callback-link,
 .btn-link {
   display: inline-block;
@@ -203,7 +210,7 @@ $md4:479.98;
     line-height: 16px;
     color: #656565;
     a {
-      color: #01509F;
+      color: $bg;
     }
     i{
       margin: 0 2px 0 1px;
