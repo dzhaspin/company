@@ -19,7 +19,12 @@ img{
   }
 }
 h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
-p{margin-bottom: 12px;font-weight: normal;font-size: 18px;line-height: 21px;}
+p{margin-bottom: 12px;font-weight: normal;font-size: 18px;line-height: 21px;
+  @media (max-width:$md4+px){
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
 
 
 
