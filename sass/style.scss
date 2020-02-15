@@ -66,10 +66,10 @@ $md4:479.98;
 
 
 .section {
-  padding: 93px 0 103px;
+  padding: 90px 0 100px;
 
   @media (max-width:$md4+px) {
-    padding: 65px 0 73px;
+    padding: 65px 0 70px;
   }
 }
 
@@ -142,71 +142,13 @@ $md4:479.98;
 @import "header";
 @import "sliders";
 @import "search";
-@import "content";
+@import "content-main";
 @import "form";
 @import "contacts";
 @import "footer";
 @import "popup";
 @import "toggle";
 @import "pages";
+@import "interface";
 
 
-.scroll-up {
-  .container {
-    position: relative;
-  }
-}
-
-.arrow-up {
-  display: none;
-  position: absolute;
-  padding: 10px;
-  width: 45px;
-  height: 45px;
-  right: 0;
-  bottom: 152px;
-  background: $accent;
-  transition: all 0.25s;
-  text-align: center;
-  cursor: pointer;
-  z-index: 9;
-
-  img {
-    vertical-align: middle;
-  }
-
-  @media (max-width:$md2+px) {
-    right: 50%;
-    transform: translateX(50%);
-  }
-
-  @media (max-width:$md3+px) {
-    bottom: 185px;
-  }
-
-  @media (max-width:$md4+px) {
-    bottom: 165px;
-  }
-}
-
-.breadcrumb {
-  margin: 17px 0px 0px 0px;
-  // .breadcrumb__item
-
-  &__item {
-    display: inline-block;
-    font-size: 14px;
-    line-height: 16px;
-    color: #656565;
-
-    i {
-      margin: 0 2px 0 1px;
-    }
-  }
-
-  // .breadcrumb__link
-
-  &__link {
-    color: $bg;
-  }
-}
