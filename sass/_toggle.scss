@@ -18,7 +18,7 @@
   width: 40px;
   height: 3px;
   background-color: $accent;
-  transition: all 0.25s;
+  // transition: all 0.25s;
 }
 
 .toggle span:before {
@@ -28,7 +28,7 @@
   height: 3px;
   top: -8px;
   background-color: $accent;
-  transition: all 0.25s;
+  // transition: all 0.25s;
 }
 
 .toggle span:after {
@@ -38,20 +38,28 @@
   height: 3px;
   top: 8px;
   background-color: $accent;
-  transition: all 0.25s;
+  // transition: all 0.25s;
 }
 
+
+// .toggle-active {
+//   // position: absolute;
+//   // width: 100%;
+//   // z-index: 101;
+// }
 .toggle-active span {
   background: transparent;
 }
 
 .toggle-active span:before {
-  transform: rotate(45deg);
-  top: 0;
+  background: transparent;
+  // transform: rotate(45deg);
+  // top: 0;
 }
 
 .toggle-active span:after {
-  transform: rotate(-45deg);
-  top: 0;
+  background: transparent;
+  // transform: rotate(-45deg);
+  // top: 0;
 }
 

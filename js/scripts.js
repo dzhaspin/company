@@ -1,7 +1,12 @@
 $(document).ready(function () {
 
   $(".toggle").click(function () {
-    $(this).toggleClass("toggle-active");
+    // $(this).toggleClass("toggle-active");
+    $('.header__menu').toggleClass('header-active');
+  });
+  
+  $(".menu-close").click(function () {
+    $('.header__menu').removeClass('header-active');
   });
 
   $(".search-icon").click(function () {

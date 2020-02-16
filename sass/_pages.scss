@@ -86,7 +86,6 @@
   }
 }
 
-
 // Company-page
 .company-page {
   &__cert {
@@ -135,7 +134,7 @@
   }
 }
 
-// Evroruberoid
+// Evroruberoid-page
 .evroruberoid {
   .page__content {
     @media (max-width:$md3+px) {
@@ -233,7 +232,6 @@
 }
 
 // News-page
-
 .news-page {
   .news {
 
@@ -249,10 +247,12 @@
       padding: 28px 30px 30px;
       max-width: 100%;
       border: 1px solid #C4C4C4;
-      @media (max-width:$md2+px){
+
+      @media (max-width:$md2+px) {
         display: block;
       }
-      @media (max-width:$md4+px){
+
+      @media (max-width:$md4+px) {
         padding: 18px 20px 20px;
       }
     }
@@ -278,5 +278,81 @@
       line-height: 19px;
       color: $text;
     }
+  }
+}
+
+.contacts-page {
+
+  // .contacts-page__list
+
+  &__list {
+    font-size: 16px;
+    color: $text;
+    line-height: 140%;
+    // .contacts-page__phone
+    @media (max-width:$md4+px){
+      font-size: 14px;
+    }
+
+    li {
+      margin: 0px 0px 16px 0px;
+
+      span {
+        margin: 0px 0px 4px 0px;
+        font-weight: 500;
+        display: block;
+      }
+      &:last-child{
+        margin: 0px 0px 0px 0px;
+      }
+    }
+
+    .contacts-page__name-company {
+      span {
+        margin: 0px 0px 10px 0px;
+      }
+    }
+  }
+
+
+  &__phone {
+    span {
+      font-weight: 400;
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    a {
+      font-size: 18px;
+      color: $text;
+    }
+  }
+
+  // .contacts-page__time
+
+  &__time {
+    i {
+      margin-right: 4px;
+      img{
+        width: 15px;
+      }
+    }
+  }
+
+  &__social {
+
+    // .contacts-page__social_wrap
+
+    &_wrap {
+      a{
+        margin-right: 10px;
+      }
+      img{
+        width: 30px;
+      }
+    }
+  }
+  &__maps{
+    margin: 50px 0px 0px 0px;
   }
 }
